@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="SC.css">
+</head>
+<body>
+    <!-- Calculator container -->
+    <div class="calculator">
+        <!-- Result display input field -->
+        <input type="text" id="result" readonly>
+        <!-- Buttons for numbers and operators -->
+        <div class="buttons">
+            <!-- Clear button -->
+            <button onclick="clearResult()">C</button>
+            <!-- Number buttons -->
+            <button onclick="appendToResult('7')">7</button>
+            <button onclick="appendToResult('8')">8</button>
+            <button onclick="appendToResult('9')">9</button>
+            <!-- Addition operator button -->
+            <button onclick="appendToResult('+')">+</button>
+            <button onclick="appendToResult('4')">4</button>
+            <button onclick="appendToResult('5')">5</button>
+            <button onclick="appendToResult('6')">6</button>
+            <!-- Subtraction operator button -->
+            <button onclick="appendToResult('-')">-</button>
+            <button onclick="appendToResult('1')">1</button>
+            <button onclick="appendToResult('2')">2</button>
+            <button onclick="appendToResult('3')">3</button>
+            <!-- Multiplication operator button -->
+            <button onclick="appendToResult('*')">*</button>
+            <button onclick="appendToResult('0')">0</button>
+            <!-- Decimal point button -->
+            <button onclick="appendToResult('.')">.</button>
+            <!-- Equals button for calculation -->
+            <button onclick="calculate()">=</button>
+            <!-- Division operator button -->
+            <button onclick="appendToResult('/')">/</button>
+        </div>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="SC.js"></script>
+</body>
+</html>
